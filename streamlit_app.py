@@ -44,4 +44,11 @@ if ingredients_list:
         
         st.success(f"Your Smoothie is ordered, {name_on_order}!", icon="✅" )
 
+#New session to display fruityvice nutricion information
+import requests
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
+st.text(fruityvice_response)
+
+
+
 
